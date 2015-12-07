@@ -1,0 +1,30 @@
+Question 6 ... COMP1927 14s2 Final Exam
+
+
+A.  (search path)
+
+20, 11, 16, 18
+
+
+B.  (level-order traversal)
+
+20, 11, 32, 4, 16, 25, 36, 3, 7, 13, 18, 21, 28, 33, 39
+
+
+C.  (#nodes in perfectly balanced tree)
+
+2^n - 1
+
+
+D.  (after rotateL)
+
+new root = 32
+left child = 20
+right child = 36
+
+
+E.  (after deleteRoot)
+
+new root = 21
+left child = 11
+right child = 32

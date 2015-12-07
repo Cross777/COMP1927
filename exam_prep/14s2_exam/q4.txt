@@ -1,0 +1,27 @@
+Question 4 ... COMP1927 14s2 Final Exam
+
+
+A.  (base cases)
+
+lo > hi
+lo == hi
+key == a[mid]
+
+
+B.  (#calls to bsearch for x == {4,9,12})
+
+i.   2
+ii.  4
+iii. 3
+
+
+C.  (min/max #calls for a[10])
+
+min = 1
+max = 4
+
+
+D.  (min/max #calls for a[N])
+
+min = 1
+max = N/2 - 1

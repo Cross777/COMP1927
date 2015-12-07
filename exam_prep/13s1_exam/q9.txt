@@ -1,0 +1,66 @@
+Question 9 ... COMP1927 13s1 Final Exam
+
+
+A.
+
+Current vertex: a
+Vertex queue: e, d, b
+Visited: (empty)
+
+Current vertex: e
+Vertex queue: d, b, f
+Visited: a
+
+...
+
+Visiting order: a, e, d, b, f, g, c, j, i, h
+
+
+B.
+
+Current vertex: a
+Vertex queue: b, e, d
+Visited: (empty)
+
+Current vertex: b
+Vertex queue: e, d, c
+Visited: a
+
+Current vertex: e
+Vertex queue: d, c, f
+Visited: a, b
+
+Current vertex: d
+Vertex queue: c, f, g
+Visited: a, b, e
+
+Current vertex: c
+Vertex queue: f, g, h
+Visited: a, b, e, d
+
+Current vertex: f
+Vertex queue: g, h, j
+Visited: a, b, e, d, c
+
+Current vertex: g
+Vertex queue: h, j, i
+Visited: a, b, e, d, c, f
+
+Current vertex: h
+Vertex queue: j, i
+Visited: a, b, e, d, c, f, g
+
+Current vertex: j
+Vertex queue: i
+Visited: a, b, e, d, c, f, g, h
+
+Current vertex: i
+Vertex queue: (empty)
+Visited: a, b, e, d, c, f, g, h, j
+
+Visting order: a, b, e, d, c, f, g, h, j, i
+
+
+C. (bonus question)
+
+Replace this by your answer

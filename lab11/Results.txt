@@ -1,0 +1,27 @@
+Results for Tests on 5000 values
+
+Depth = depth of tree, Cost = average #comparisons per search
+
+
+             Ascending Order        Prefix Order        Random Order
+Insert
+Method       Depth      Cost     Depth      Cost     Depth      Cost
+
+L            5000       3114     13         12       28         16
+
+A            5000       1887     28         1115     28         16
+
+R            2492       952      1774       674      27         15
+
+B            204        62       20         14       23         13
+
+S            4999       24       3977       23       31         23
+
+V            13         12       14         12       15         12
+
+
+Notes (what the above indicates):
+- Inserting randomly is more likely to produce a balanced tree
+- Inserting in ascending order produces worst case costs for all methods
+- Self-balancing AVL tree is best case across ascending/prefix/random order (with the exception of depth when compared with prefix leaf insertion)
+- At-root prefix order is expensive but is not deep; splay ascending/prefix order are both very deep but not costly

@@ -1,0 +1,7 @@
+gcc -Wall -Werror -gdwarf-2 (on cse)
+or gcc -Wall -Werror -g (gcc will compile with debugging output)
+
+gdb ./usel
+run
+
+mainly used for debugging seg faults and printing variable values at current state of program

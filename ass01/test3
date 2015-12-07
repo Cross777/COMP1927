@@ -1,0 +1,8 @@
++ a 100       // allocate 100 bytes, referenced by a (e.g. a = malloc(100))
++ b 50        // allocate 50 bytes, referenced by b (e.g. b = malloc(50))
+* a 25        // assign 25 to a's memory address (e.g. *a = 25)
+* b 10        // assign 10 to b's memory address (e.g. *b = 10)
+- b           // deallocate b's memory (e.g. free(b))
+#             // display memory state
++ c 256       // allocate 256 bytes, referenced by c (e.g. c = malloc(256))
+q             // quit the vlad program

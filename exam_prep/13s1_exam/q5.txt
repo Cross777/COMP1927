@@ -1,0 +1,20 @@
+Question 5 ... COMP1927 13s1 Final Exam
+
+A.
+
+Operation             State of Queue after operation
+                      [highest priority ... lowest priority]
+
+initially             -
+PQueueJoin(PQ, 'X')   X
+PQueueJoin(PQ, 'A')   A X
+PQueueJoin(PQ, 'J')   A J X
+PQueueLeave(PQ)       J X
+PQueueJoin(PQ, 'K')   J K X
+PQueueLeave(PQ)       K X
+PQueueLeave(PQ)       X
+
+
+B.
+
+Always insert the newest value into its appropriate place in the stack or queue, i.e. order upon insertion. Priority value would then be the top of the stack or the front of the queue. 

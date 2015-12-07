@@ -1,0 +1,35 @@
+Question 4 ... COMP1927 13s1 Final Exam
+
+
+A.
+
+for (i = 0; i < 5; i++)
+   for (j = i+1; j < 6; j++)
+
+i = 0, j = 1->5 (5)
+i = 1, j = 2->5 (4)
+...
+3
+2
+1
+
+1 + 2 + 3 + 4 + 5 = 15 times
+
+
+B.
+
+1 + 2 + 3 + ... + (n-2) + (n-1)
+sum of an AP
+(n-1)/2 * (1+n-1) = (n(n-1))/2
+
+
+C.
+
+(n^2-n)/2
+Highest order term = n^2
+Therefore O(n^2)
+
+
+D.
+
+a[j] < a[min]

@@ -1,0 +1,215 @@
+weill % ./tests.sh
+TEST 1: Verify that all inputs were correctly sorted
+100 mydata
+100 sortedA
+100 sortedB
+
+TEST 2: Compare timing for different orders
+sortA timing // 1,000,000 elements
+- ascending:
+0.06 seconds
+0.07 seconds
+0.07 seconds
+- descending:
+0.07 seconds
+0.06 seconds
+0.07 seconds
+- random:
+0.06 seconds
+0.13 seconds
+0.06 seconds
+sortA timing // 2,500,000 elements
+- ascending:
+0.41 seconds
+0.44 seconds
+0.40 seconds
+- descending:
+0.67 seconds
+0.66 seconds
+0.39 seconds
+- random:
+0.66 seconds
+0.39 seconds
+0.38 seconds
+sortA timing // 5,000,000 elements
+- ascending:
+1.95 seconds
+1.82 seconds
+1.58 seconds
+- descending:
+1.54 seconds
+1.54 seconds
+1.54 seconds
+- random:
+1.76 seconds
+1.52 seconds
+1.55 seconds
+sortB timing // 1,000,000 elements
+- ascending:
+0.03 seconds
+0.03 seconds
+0.06 seconds
+- descending:
+0.04 seconds
+0.02 seconds
+0.05 seconds
+- random:
+0.04 seconds
+0.05 seconds
+0.04 seconds
+sortB timing // 2,500,000 elements
+- ascending:
+0.26 seconds
+0.46 seconds
+0.22 seconds
+- descending:
+0.21 seconds
+0.39 seconds
+0.21 seconds
+- random:
+0.21 seconds
+0.23 seconds
+0.21 seconds
+sortB timing // 5,000,000 elements
+- ascending:
+1.11 seconds
+0.98 seconds
+1.40 seconds
+- descending:
+0.96 seconds
+1.19 seconds
+1.34 seconds
+- random:
+1.60 seconds
+1.16 seconds
+1.21 seconds
+
+Test 3: Check stability
+--- Original combined seq/gen ---
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+6 owk
+1 nwl
+13 xsj
+19 cdy
+4 hcd
+9 qsc
+7 kyh
+12 wfr
+14 ybl
+18 yne
+20 ggx
+16 fsa
+5 arz
+2 rbb
+3 mqb
+10 dxr
+15 dbe
+11 jmo
+8 idd
+17 rcb
+
+------ sortA ------
+1
+1 nwl
+2
+2 rbb
+3
+3 mqb
+4
+4 hcd
+5
+5 arz
+6
+6 owk
+7
+7 kyh
+8
+8 idd
+9
+9 qsc
+10
+10 dxr
+11
+11 jmo
+12
+12 wfr
+13
+13 xsj
+14
+14 ybl
+15
+15 dbe
+16
+16 fsa
+17
+17 rcb
+18
+18 yne
+19
+19 cdy
+20
+20 ggx
+
+------ sortB ------
+1
+1 nwl
+2
+2 rbb
+3
+3 mqb
+4
+4 hcd
+5
+5 arz
+6
+6 owk
+7
+7 kyh
+8
+8 idd
+9 qsc
+9
+10 dxr
+10
+11
+11 jmo
+12
+12 wfr
+13
+13 xsj
+14 ybl
+14
+15
+15 dbe
+16
+16 fsa
+17 rcb
+17
+18 yne
+18
+19
+19 cdy
+20 ggx
+20
+
+***** ALL TESTS COMPLETED *****
+
